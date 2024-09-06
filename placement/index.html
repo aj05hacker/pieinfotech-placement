@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pie InfoTech Placements</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+      overflow-x: hidden;
+    }
+    h1, h2, h3 {
+      font-weight: 600;
+    }
+    p {
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    /* Header Section */
+    header {
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 0;
+      animation: fadeIn 1s ease-in-out;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 4rem 0;
+      background-color: #ffcc80;
+      color: #333;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      max-width: 700px;
+      margin: 1rem auto;
+    }
+    .hero .button {
+      background-color: #ff5722;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      margin-top: 2rem;
+      display: inline-block;
+      animation: slideIn 1.5s ease-in-out;
+    }
+
+    /* Profile Section */
+    .profile-section {
+      padding: 3rem 0;
+      background-color: #ffffff;
+      text-align: center;
+    }
+    .profile-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    .profile-cards {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      position: relative;
+      animation: floatCards 10s ease-in-out infinite;
+    }
+    .profile-card {
+      margin: 1rem;
+      padding: 1rem;
+      width: 200px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    .profile-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+      animation: none;
+    }
+    .profile-card h3 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    .profile-card p {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    /* Portfolio Sections */
+    .portfolio-section {
+      display: none;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      border-top: 2px solid #007bff;
+      margin-top: 1rem;
+    }
+    .portfolio-section.active {
+      display: block;
+    }
+    .portfolio-section img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    /* About Section */
+    .about-section {
+      padding: 3rem 2rem;
+      background-color: #673ab7;
+      color: #ffffff;
+      text-align: center;
+    }
+    .about-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .about-section p {
+      font-size: 1.2rem;
+    }
+
+    /* Motivation Section */
+    .motivation-section {
+      padding: 3rem 2rem;
+      background-color: #4caf50;
+      color: #ffffff;
+      text-align: center;
+    }
+    .motivation-section h2 {
+      font-size: 2.5rem;
+    }
+    .motivation-section p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+    .tips {
+      margin-top: 2rem;
+      text-align: left;
+      font-size: 1.1rem;
+      color: #ffffff;
+    }
+
+    /* Footer Section */
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      background-color: #007bff;
+      color: white;
+    }
+
+    /* Animations */
+    @keyframes slideIn {
+      from {
+        transform: translateY(100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes floatCards {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Congratulations to Our Champions!</h1>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Placed at Pie InfoTech - Campus Recruitment 2024</h2>
+    <p>Success doesn’t come from what you do occasionally, but from what you do consistently. Our friends have proven this true by securing their dream jobs at Pie InfoTech during the campus interviews! This is just the beginning of a new journey for them, and we couldn’t be prouder!</p>
+    <a href="#profiles" class="button">Meet the Stars</a>
+  </section>
+
+  <!-- Profile Section -->
+  <section class="profile-section" id="profiles">
+    <h2>Meet Our Achievers</h2>
+    <div class="profile-cards">
+      
+      <!-- Card 1 -->
+      <a href="./manivel.html" class="profile-card">
+        <h3 style="color: black;">Manivel S</h3>
+        <p style="color: gray;">Software Engineer</p>
+      </a>
+
+      <!-- Card 2 -->
+      <a href="./yogi.html" class="profile-card">
+        <h3 style="color: black;">Yogeshwaran K</h3>
+        <p style="color: gray;">Designer</p>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="./prabhu.html" class="profile-card">
+        <h3 style="color: black;">Prabhu K L</h3>
+        <p style="color: gray;">Software Engineer</p>
+      </a>
+
+      <!-- Card 4 -->
+      <a href="./jaffer.html" class="profile-card">
+        <h3 style="color: black;">Jaffer</h3>
+        <p style="color: gray;"> Software Engineer</p>
+      </a>
+
+      <!-- Card 5 -->
+      <a href="./pavithra.html" class="profile-card">
+        <h3 style="color: black;">Pavithra</h3>
+        <p style="color: gray;">Software Developer</p>
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- Motivation Section -->
+  <section class="motivation-section">
+    <h2>Your Turn to Shine!</h2>
+    <p>If you’re a student with dreams of making it big in the tech world, know that these stories aren’t far from your reach. With focus, dedication, and passion, you too can achieve your dreams. Start now, and you might just be our next success story!</p>
+    <div class="tips">
+      <ul>
+        <li>Stay updated with the latest trends in technology.</li>
+        <li>Work on projects that challenge your skills.</li>
+        <li>Never stop learning and improving yourself.</li>
+        <li>Network with like-minded people and professionals in your field.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>Developed with Joy and passion by Abdul Hajees. This page is a celebration of achievements and a reminder that hard work always pays off!</p>
+    <p>2024 Pie InfoTech Campus Placements | Wishing future achievers all the best!</p>
+  </footer>
+
+
+
+  <!--script>
+    document.querySelectorAll('a[href^="#portfolio"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script-- >
+  
+</body>
+</html>
