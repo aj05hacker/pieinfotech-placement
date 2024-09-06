@@ -35,26 +35,26 @@
       animation: fadeIn 1s ease-in-out;
     }
     header h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin: 0;
     }
 
     /* Hero Section */
     .hero {
       text-align: center;
-      padding: 4rem 0;
+      padding: 4rem 1rem;
       background-color: #ffcc80;
       color: #333;
       position: relative;
       overflow: hidden;
     }
     .hero h2 {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
     .hero p {
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin-top: 1rem;
-      max-width: 700px;
+      max-width: 90%;
       margin: 1rem auto;
     }
     .hero .button {
@@ -70,31 +70,32 @@
 
     /* Profile Section */
     .profile-section {
-      padding: 3rem 0;
+      padding: 3rem 1rem;
       background-color: #ffffff;
       text-align: center;
     }
     .profile-section h2 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin-bottom: 2rem;
     }
     .profile-cards {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      gap: 2rem;
-      position: relative;
+      gap: 1rem;
       animation: floatCards 10s ease-in-out infinite;
     }
     .profile-card {
       margin: 1rem;
       padding: 1rem;
-      width: 200px;
+      width: calc(50% - 2rem);
       background-color: #f9f9f9;
       border-radius: 10px;
       box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
       transition: transform 0.4s ease, box-shadow 0.4s ease;
       cursor: pointer;
       overflow: hidden;
+      text-align: center;
     }
     .profile-card:hover {
       transform: scale(1.05);
@@ -103,11 +104,11 @@
     }
     .profile-card h3 {
       margin: 0;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
     .profile-card p {
       margin: 0;
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
 
     /* Portfolio Sections */
@@ -129,44 +130,44 @@
 
     /* About Section */
     .about-section {
-      padding: 3rem 2rem;
+      padding: 3rem 1rem;
       background-color: #673ab7;
       color: #ffffff;
       text-align: center;
     }
     .about-section h2 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin-bottom: 1rem;
     }
     .about-section p {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     /* Motivation Section */
     .motivation-section {
-      padding: 3rem 2rem;
+      padding: 3rem 1rem;
       background-color: #4caf50;
       color: #ffffff;
       text-align: center;
     }
     .motivation-section h2 {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
     .motivation-section p {
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin-top: 1rem;
     }
     .tips {
       margin-top: 2rem;
       text-align: left;
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: #ffffff;
     }
 
     /* Footer Section */
     footer {
       text-align: center;
-      padding: 2rem 0;
+      padding: 2rem 1rem;
       background-color: #007bff;
       color: white;
     }
@@ -194,6 +195,58 @@
       100% { transform: translateY(0); }
     }
 
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 1.5rem;
+      }
+      .hero p {
+        font-size: 0.9rem;
+      }
+      .profile-card {
+        width: calc(100% - 2rem);
+      }
+      .profile-section h2 {
+        font-size: 1.8rem;
+      }
+      .profile-card h3 {
+        font-size: 1rem;
+      }
+      .profile-card p {
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h2 {
+        font-size: 1.25rem;
+      }
+      .hero p {
+        font-size: 0.8rem;
+      }
+      .profile-card {
+        width: calc(100% - 2rem);
+      }
+      .profile-section h2 {
+        font-size: 1.6rem;
+      }
+      .profile-card h3 {
+        font-size: 0.9rem;
+      }
+      .profile-card p {
+        font-size: 0.7rem;
+      }
+      .motivation-section h2 {
+        font-size: 1.8rem;
+      }
+      .motivation-section p {
+        font-size: 0.9rem;
+      }
+      .tips {
+        font-size: 0.9rem;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -217,37 +270,36 @@
       
       <!-- Card 1 -->
       <a href="./manivel.html" class="profile-card">
-        <h3 style="color: black;">Manivel S</h3>
-        <p style="color: gray;">Software Engineer</p>
+        <h3>Manivel S</h3>
+        <p>Software Engineer</p>
       </a>
 
       <!-- Card 2 -->
       <a href="./yogi.html" class="profile-card">
-        <h3 style="color: black;">Yogeshwaran K</h3>
-        <p style="color: gray;">Designer</p>
+        <h3>Yogeshwaran K</h3>
+        <p>Designer</p>
       </a>
 
       <!-- Card 3 -->
       <a href="./prabhu.html" class="profile-card">
-        <h3 style="color: black;">Prabhu K L</h3>
-        <p style="color: gray;">Software Engineer</p>
+        <h3>Prabhu K L</h3>
+        <p>Software Engineer</p>
       </a>
 
       <!-- Card 4 -->
       <a href="./jaffer.html" class="profile-card">
-        <h3 style="color: black;">Jaffer</h3>
-        <p style="color: gray;"> Software Engineer</p>
+        <h3>Jaffer</h3>
+        <p>Software Engineer</p>
       </a>
 
       <!-- Card 5 -->
       <a href="./pavithra.html" class="profile-card">
-        <h3 style="color: black;">Pavithra</h3>
-        <p style="color: gray;">Software Developer</p>
+        <h3>Pavithra</h3>
+        <p>Software Developer</p>
       </a>
 
     </div>
   </section>
-
 
   <!-- Motivation Section -->
   <section class="motivation-section">
@@ -269,18 +321,5 @@
     <p>2024 Pie InfoTech Campus Placements | Wishing future achievers all the best!</p>
   </footer>
 
-
-
-  <!--script>
-    document.querySelectorAll('a[href^="#portfolio"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script-- >
-  
 </body>
 </html>
